@@ -15,6 +15,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 	m <- NULL
+	## save in a different environment
 	set <- function(y) {
 			x <<- y
 			m <<- NULL
@@ -23,6 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 	## store in a different environment
 	setsolve <- function(solve) m <<- solve
 	getsolve <- function() m
+	## create a list of functions
 	list(set = set, get = get,
 		 setsolve = setsolve,
 		 getsolve = getsolve)
