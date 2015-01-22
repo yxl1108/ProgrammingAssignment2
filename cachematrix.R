@@ -5,6 +5,9 @@
 ## matrix provided is invertible) and do the inversion, using R solve() function, and 
 ## save the result in a different environment as cache, for future references
 
+## this exercise is to demonstrate R lexical scoping. 
+## R use variables where function is defined.
+
 ## to call it, use 
 ## source("cachematrix.R")
 ## a<-matrix(c(1,2,-2,1),2,2)
